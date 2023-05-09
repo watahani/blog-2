@@ -9,10 +9,7 @@ file_list=(
 )
 
 source_dir="/blog"
-target_dir=$CODESPACE_VSCODE_FOLDER
-
-echo $CODESPACE_VSCODE_FOLDER > /workspaces/codespace_folder.txt
-echo `pwd` > /workspaces/pwd.txt
+target_dir=`pwd`
 
 for file_name in "${file_list[@]}"
 do
