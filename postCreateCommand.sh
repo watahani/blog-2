@@ -11,6 +11,9 @@ file_list=(
 source_dir="/blog"
 target_dir=$CODESPACE_VSCODE_FOLDER
 
+echo $CODESPACE_VSCODE_FOLDER > /workspaces/codespace_folder.txt
+echo `pwd` > /workspaces/pwd.txt
+
 for file_name in "${file_list[@]}"
 do
   if [ -e "$source_dir/$file_name" ] && [ ! -e "$target_dir/$file_name" ]; then
